@@ -1,0 +1,25 @@
+version: "3"
+services:
+  backend:
+    container_name: express-server
+    build:
+      context: ./backend
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      back-tier:
+
+  frontend:
+    container_name: react-frontend
+    build:
+      context: ./frontend
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      back-tier:
+
+networks:
+  back-tier:
+    driver: bridge
