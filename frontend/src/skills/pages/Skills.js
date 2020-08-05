@@ -29,7 +29,7 @@ const Skills = (props) => {
     if (skill) {
       try {
         const response = await Axios.get(
-          `http://localhost:5000/api/mentor/${skill}`
+          `http://ec2-54-90-206-133.compute-1.amazonaws.com:5000/api/mentor/${skill}`
         );
         setMentors(response.data);
         console.log(response.data);

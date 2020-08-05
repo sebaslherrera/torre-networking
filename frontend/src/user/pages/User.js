@@ -33,7 +33,7 @@ const User = () => {
     if (username) {
       try {
         const response = await Axios.get(
-          `http://localhost:5000/api/${username}`
+          `http://ec2-54-90-206-133.compute-1.amazonaws.com:5000/api/${username}`
         );
         setSkills(response.data);
         console.log(skills); //watch
