@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import "./App.css";
 
-import Mentors from "./mentor/pages/Mentors";
+import User from "./user/pages/User";
 
 const useStyles = makeStyles((theme) => ({
   offset: theme.mixins.toolbar,
@@ -32,7 +32,7 @@ function App() {
       <main>
         <Switch>
           <Route path="/" exact>
-            <Mentors />
+            <User />
           </Route>
           <Redirect to="/" />
         </Switch>
