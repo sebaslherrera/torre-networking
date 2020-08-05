@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.2447cb68.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.c7c6a40c.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.c7c6a40c.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.95e3f22f.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.95e3f22f.js.map",
-    "static/js/2.8e22fcae.chunk.js": "/react-gh-pages/static/js/2.8e22fcae.chunk.js",
-    "static/js/2.8e22fcae.chunk.js.map": "/react-gh-pages/static/js/2.8e22fcae.chunk.js.map",
-    "index.html": "/react-gh-pages/index.html",
-    "precache-manifest.cd052775ae92376f0131f94fbf7dbe2a.js": "/react-gh-pages/precache-manifest.cd052775ae92376f0131f94fbf7dbe2a.js",
-    "service-worker.js": "/react-gh-pages/service-worker.js",
-    "static/css/main.2447cb68.chunk.css.map": "/react-gh-pages/static/css/main.2447cb68.chunk.css.map",
-    "static/js/2.8e22fcae.chunk.js.LICENSE.txt": "/react-gh-pages/static/js/2.8e22fcae.chunk.js.LICENSE.txt"
+    "main.css": "/torre-networking/static/css/main.2447cb68.chunk.css",
+    "main.js": "/torre-networking/static/js/main.dca46ced.chunk.js",
+    "main.js.map": "/torre-networking/static/js/main.dca46ced.chunk.js.map",
+    "runtime-main.js": "/torre-networking/static/js/runtime-main.5a8fb714.js",
+    "runtime-main.js.map": "/torre-networking/static/js/runtime-main.5a8fb714.js.map",
+    "static/js/2.8e22fcae.chunk.js": "/torre-networking/static/js/2.8e22fcae.chunk.js",
+    "static/js/2.8e22fcae.chunk.js.map": "/torre-networking/static/js/2.8e22fcae.chunk.js.map",
+    "index.html": "/torre-networking/index.html",
+    "precache-manifest.cb200ab44356bda34b7a5643a295a620.js": "/torre-networking/precache-manifest.cb200ab44356bda34b7a5643a295a620.js",
+    "service-worker.js": "/torre-networking/service-worker.js",
+    "static/css/main.2447cb68.chunk.css.map": "/torre-networking/static/css/main.2447cb68.chunk.css.map",
+    "static/js/2.8e22fcae.chunk.js.LICENSE.txt": "/torre-networking/static/js/2.8e22fcae.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.95e3f22f.js",
+    "static/js/runtime-main.5a8fb714.js",
     "static/js/2.8e22fcae.chunk.js",
     "static/css/main.2447cb68.chunk.css",
-    "static/js/main.c7c6a40c.chunk.js"
+    "static/js/main.dca46ced.chunk.js"
   ]
 }
