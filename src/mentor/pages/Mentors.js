@@ -4,6 +4,8 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import ButtonBase from "@material-ui/core/ButtonBase";
+import Button from "@material-ui/core/Button";
+//import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,7 +32,7 @@ const CardComplex = (props) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
+      <Paper variant="outlined" className={classes.paper}>
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
@@ -51,15 +53,18 @@ const CardComplex = (props) => {
                 </Typography>
               </Grid>
               <Grid item>
-                <Typography
-                  variant="body2"
-                  style={{ cursor: "pointer" }}
-                  onClick={() => {
-                    const URL = `https://torre.co/en/messenger/conversations/${props.id}`;
-                    window.open(URL, "_blank");
-                  }}
-                >
-                  Say Hi!
+                <Typography variant="body2" style={{ cursor: "pointer" }}>
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    size="small"
+                    onClick={() => {
+                      const URL = `https://torre.co/en/messenger/conversations/${props.id}`;
+                      window.open(URL, "_blank");
+                    }}
+                  >
+                    Say Hi!
+                  </Button>
                 </Typography>
               </Grid>
             </Grid>
@@ -78,14 +83,22 @@ const CardComplex = (props) => {
 const Mentors = (props) => {
   return (
     <React.Fragment>
-      <div>
+      {/* <Container maxWidth="lg"> */}
+      <Grid container spacing={3}>
         {props.mentors &&
           props.mentors.map((mentor) => {
             return (
               /*<li key={mentor.subjectId} id={mentor.subjectId}>
                 {mentor.username}
               </li> */
-              <li key={mentor.subjectId} id={mentor.subjectId}>
+
+              <Grid
+                item
+                xs={3}
+                sm={3}
+                key={mentor.subjectId}
+                id={mentor.subjectId}
+              >
                 <CardComplex
                   username={mentor.username}
                   name={mentor.name}
@@ -94,10 +107,11 @@ const Mentors = (props) => {
                   id={mentor.subjectId}
                   locationName={mentor.locationName}
                 />
-              </li>
+              </Grid>
             );
           })}
-      </div>
+      </Grid>
+      {/* </Container> */}
     </React.Fragment>
   );
 };

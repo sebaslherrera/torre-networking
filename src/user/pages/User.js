@@ -11,7 +11,7 @@ import Skills from "../../skills/pages/Skills";
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
-      margin: theme.spacing(1),
+      margin: theme.spacing(5),
       width: "25ch",
     },
   },
@@ -50,6 +50,7 @@ const User = () => {
         justifyContent="center"
         alignItems="center"
         padding={1}
+        mb={5}
       >
         <Paper m="auto" bgcolor="lightblue">
           <form
@@ -71,7 +72,7 @@ const User = () => {
               name="username"
               type="submit"
             >
-              Search
+              Search Mentors
             </Button>
           </form>
         </Paper>
