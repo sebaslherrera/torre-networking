@@ -1,7 +1,7 @@
 version: "3"
 services:
   backend:
-    container_name: express-server
+    container_name: express-server-torre
     build:
       context: ./backend
       dockerfile: ./docker/Dockerfile
