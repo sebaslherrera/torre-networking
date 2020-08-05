@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
 const User = () => {
   const classes = useStyles();
   const [username, setUsername] = useState(null);
+  const [errorText, setErrorText] = useState(null);
   const [skills, setSkills] = useState(null);
 
   const handleUsername = (e) => {
@@ -35,8 +36,13 @@ const User = () => {
         const response = await Axios.get(
           `http://ec2-54-90-206-133.compute-1.amazonaws.com:5000/api/${username}`
         );
-        setSkills(response.data);
-        console.log(skills); //watch
+
+        if (response.data.error === undefined) {
+          setSkills(response.data);
+          setErrorText(null);
+        } else {
+          setErrorText("Enter a valid username of Torre");
+        }
       } catch (err) {
         console.log(err);
       }
@@ -64,6 +70,7 @@ const User = () => {
               label="Username of Torre"
               name="username"
               onChange={handleUsername}
+              helperText={errorText}
               autoFocus
             />
             <Button
